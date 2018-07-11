@@ -1,0 +1,47 @@
+.section-heading {
+	padding: 0 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-size: 16px;
+	line-height: 1;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	&_light {
+		color: #ffffff;
+	}
+	&_dark {
+		color: #727c83;
+	}
+	@media screen and (max-width: @breakpoint-small) {
+		font-size: 12px;
+	}
+}
+
+.section-heading__year {
+	color: #ffffff;
+	line-height: 1;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+
+.section-heading__number {
+	color: #727c83;
+	line-height: 1;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	position: relative;
+}
+
+.section-heading__marker {
+	width: 33px;
+	height: 1px;
+	background-color: #727c83;
+	position: absolute;
+	top: 50%;
+	left: -42px;
+	transform: translateY(-50%);
+}
