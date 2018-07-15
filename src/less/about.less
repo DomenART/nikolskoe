@@ -22,35 +22,37 @@
 	max-width: 1248px;
 	margin: 0 auto 87px;
 	padding-top: 49.4%;
+	background: url(../img/video-bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
 	@media screen and (max-width: @breakpoint-small) {
 		padding-top: 58%;
 	}
 }
 
-.about__columns {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(1fr, 460px));
-	grid-column-gap: 148px;
-	grid-row-gap: 40px;
-	max-width: 1100px;
-	margin: 0 auto 110px;
-	font-size: 20px;
-	font-weight: 300;
-	line-height: 1.5;
-	letter-spacing: -0.1px;
+.about__video-btn {
+	border: 0;
+	padding: 0;
+	background: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	cursor: pointer
+}
+
+.about__video-btn-icon {
+	width: 136px;
+	height: 136px;
 	@media screen and (max-width: @breakpoint-small) {
-		font-size: 16px;
+		width: 70px;
+		height: 70px;
 	}
 }
 
-.about__text {
-	max-width: 900px;
-	margin: 0 auto;
-	text-align: center;
-	letter-spacing: -0.3px;
-	@media screen and (max-width: @breakpoint-small) {
-		font-size: 16px;
-	}
+.about__columns-text {
+	margin-bottom: 110px;
 }
 
 .about__goal {

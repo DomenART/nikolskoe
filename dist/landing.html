@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="main.css">
 	<title>Кейс</title>
 </head>
-<body>
+<body class="page">
 	<div class="intro">
 		<div class="uk-container">
 			<div class="section-heading section-heading_light">
@@ -37,7 +37,7 @@
 				От нового качества экономики – <br>
 				к новому качеству жизни
 			</div>
-			<div class="about__columns">
+			<div class="about__columns-text columns-text">
 				<div>
 					Особенности территориального расположения, хорошо развитая социальная, транспортная и инженерная инфраструктура образования дает все возможности поселению стать одной из точек роста на территории района.
 				</div>
@@ -46,20 +46,268 @@
 				</div> 
 			</div>
 			<div class="about__video-wrapper uk-cover-container">
-				<video data-uk-cover controls pause>
-					<source src="img/bigbuckbunny.mp4" autostart="false">
+				<video class="about__video" data-uk-cover="autoplay: false">
+					<source src="img/bigbuckbunny.mp4">
 				</video>
+				<button class="about__video-btn">
+					<svg class="about__video-btn-icon" viewBox="0 0 143 143">
+						<defs>
+							<path id="j9ava" d="M878 2395v-146h146v146zm139.99-72.5a66.5 66.5 0 1 0-133 0 66.5 66.5 0 0 0 133 0zm-32 1l-50.98 30.5V2293z"/>
+							<path id="j9avb" d="M951.49 2389a66.5 66.5 0 1 1 0-133 66.5 66.5 0 0 1 0 133zM935 2292.98V2354l50.98-30.5z"/>
+							<clipPath id="j9avc"><use fill="#fff" xlink:href="#j9ava"/></clipPath>
+						</defs>
+						<g>
+							<g opacity=".58" transform="translate(-880 -2251)">
+							<use fill="transparent" xlink:href="#j9avb"/>
+							<use fill="#fff" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="10" clip-path="url(&quot;#j9avc&quot;)" xlink:href="#j9avb"/>
+							</g>
+						</g>
+					</svg>
+				</button>
 			</div>
-			
-			<div class="about__text">
+			<div class="center-text">
 				В рамках действующей стратегии возникла необходимость в создании современного, удобного и информативного сайта.
 			</div>
 			<div class="about__goal">
 				<span>Задача</span>
 			</div>
-			<div class="about__text">
+			<div class="center-text">
 				Создать интернет-представительство администрации муниципального образования
 				с учетом всех требований, предъявляемых к сайтам государственных структур.
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="uk-container">
+			<div class="about__section-heading section-heading section-heading_dark">
+				<div class="section-heading__title">
+					Главная
+				</div>
+				<div class="section-heading__number">
+					<span class="section-heading__marker"></span>02
+				</div>
+			</div>
+		</div>
+		<div class="home-devices">
+			<div class="home-devices__tablet">
+				<img src="img/home-tablet.png?7da0caf28adc53a07203648f8e915863" alt="">
+			</div>
+			<div class="home-devices__smartphone">
+				<img src="img/home-smartphone.png?5c126c9f7a41851130f2555939cec0cf" alt="">
+			</div>
+		</div>
+		<div class="visual">
+			<div class="uk-container uk-container-small">
+				<div class="visual-heading">
+					<div class="visual-heading__decor"></div>
+					<div class="visual-heading__title">Визуальная информация</div>
+				</div>
+				<div class="visual__columns-text columns-text">
+					<div>
+						Главная страница должна быть
+						и информативной, и интересной для посетителя, поэтому для первого экрана
+						мы предложили использовать полноэкранный слайдер с кадрами, отражающими ключевые сектора экономической деятельности поселения.	
+					</div>
+					<div>
+						Сельское хозяйство является основной отраслью экономики.
+
+						Включает в себя растениеводство, животноводство и птицеводство.
+					</div>
+				</div>
+			</div>
+			<div class="visual__homepage">
+				<div class="visual__content"></div>
+				<div class="visual-slider" uk-slideshow>
+					<ul class="visual-slide__items uk-slideshow-items">
+						<li class="uk-cover-container uk-position-absolute">
+							<img src="img/slider-cow.jpg?084b3653dcd7c5f7056d1bf6ed568e9b" data-uk-cover alt="">
+						</li>
+						<li class="uk-cover-container uk-position-absolute">
+							<img src="img/slider-bird.jpg?99976ba08dd348a86d71e0a5b2e5d945" data-uk-cover alt="">
+						</li>
+						<li class="uk-cover-container uk-position-absolute">
+							<img src="img/slider-plant.jpg?10bb70a7196424b00e53bab7de9c1baa" data-uk-cover alt="">
+						</li>
+					</ul>
+					<ul class="visual-slider__nav">
+						<li uk-slideshow-item="0">
+							<a href="#">
+								<img src="img/cow.png?8bc2d6c6062cf9e59fdc968a3a904e60" alt="">
+							</a>
+						</li>
+						<li uk-slideshow-item="1">
+							<a href="#">
+								<img src="img/chicken.png?131dccea4f8e8452b9cb2c0d735c0582" alt="">
+							</a>
+						</li>
+						<li uk-slideshow-item="2">
+							<a href="#">
+								<img src="img/plant.png?39218b8f10a02b5f0bf8820798aad088" alt="">	
+							</a>
+						</li>
+					</ul>
+					<div class="visual-slider__control-bar">
+						<a class="visual-slider__control-btn visual-slider__prev" href="#" uk-slideshow-item="previous"></a>
+						<a class="visual-slider__control-btn visual-slider__next" href="#" uk-slideshow-item="next"></a>
+					</div>
+					<img class="visual-slider__vector" src="img/visual-slider-vector.svg?db17d0bc8e4a99414309696408f50805" alt="">
+				</div>
+			</div>
+			<div class="visual__center-text center-text center-text_light">
+				Концепция со слайдером была принята, но кадры с животноводством и растениеводством в дальнейшем решили заменить на кадры с достопримечательностями поселения.
+			</div>
+		</div>
+	</div>
+	<div class="structure">
+		<div class="uk-container">
+			<div class="structure__title">
+				Структура
+			</div>
+			<div class="structure__text">
+				<p>Одним из удобных и легких для восприятия способов подачи информации является “карточный” дизайн.</p>
+				<p>Именно такой вариант мы и предложили использовать для ключевых страниц сайта.</p>
+			</div>
+		</div>
+		<div class="homepage">
+			<div class="homepage-1">
+				<img class="homepage-1-image" src="img/homepage-1.png?3aba1a541d58e73f167a48a5401e7cd9" alt="">
+			</div>
+			<div class="homepage-2">
+				<img class="homepage-1-image" src="img/homepage-2.png?37a7827bff041922289d81c50ce3d7ee" alt="">
+			</div>
+			<div class="homepage-3">
+				<img class="homepage-1-image" src="img/homepage-3.png?11527fc2b1a004df9aa650be462372fd" alt="">
+			</div>
+			<div class="homepage-4">
+				<img class="homepage-1-image" src="img/homepage-4.png?3afc08a84cadba6ae4509bee1a473b54" alt="">
+			</div>
+			<div class="homepage-5">
+				<img class="homepage-1-image" src="img/homepage-5.png?b6099f179b42f350ee965857444d3d9e" alt="">
+			</div>
+			<div class="homepage-6">
+				<img class="homepage-1-image" src="img/homepage-6.png?cb4a361d5531813e6e14cd2472967d7a" alt="">
+			</div>
+			<div class="homepage-7">
+				<img class="homepage-1-image" src="img/homepage-7.png?9b7cd39357eaf51ec06a455285ccb79f" alt="">
+			</div>
+			<div class="homepage-8">
+				<img class="homepage-1-image" src="img/homepage-8.png?926c723e9e246e976a5934e8050951f9" alt="">
+			</div>
+			<div class="homepage-9">
+				<img class="homepage-1-image" src="img/homepage-9.png?c0a0766e9bcce161c8823c9971ac9797" alt="">
+			</div>
+			<div class="homepage-10">
+				<img class="homepage-1-image" src="img/homepage-10.png?e19f376fa3db0dde3383bb85d972b14d" alt="">
+			</div>
+			<div class="homepage-11">
+				<img class="homepage-1-image" src="img/homepage-11.png?06cadf0f4fe0aac19cd133a47bdd8160" alt="">
+			</div>
+			<div class="homepage-12">
+				<img class="homepage-1-image" src="img/homepage-12.png?cfea0f85395c44c33193ddb34f8dff3d" alt="">
+			</div>
+			<div class="homepage-13">
+				<img class="homepage-1-image" src="img/homepage-13.png?04dd1f96b96230e25b8dec23682b7941" alt="">
+			</div>
+			<div class="homepage-14">
+				<img class="homepage-1-image" src="img/homepage-14.png?ed7a6008704ab0d4ba9580627f2f0c94" alt="">
+			</div>
+			<div class="homepage-15">
+				<img class="homepage-1-image" src="img/homepage-15.png?60fbb473e352d962d2b22f9d8cc3ceea" alt="">
+			</div>
+			<div class="homepage-16">
+				<img class="homepage-1-image" src="img/homepage-16.png?d03409f27f07e30ae8dd40bf39120a26" alt="">
+			</div>
+			<div class="homepage-17">
+				<img class="homepage-1-image" src="img/homepage-17.png?478d227fa20480464dd6adb54db9a8d1" alt="">
+			</div>
+			<div class="homepage-18">
+				<img class="homepage-1-image" src="img/homepage-18.png?6d3b5225ef7084f33d2b1c9f6795e676" alt="">
+			</div>
+			<div class="homepage-19">
+				<img class="homepage-1-image" src="img/homepage-19.png?b743ab6b19a6011c9d99d090467c7c84" alt="">
+			</div>
+			<div class="homepage-20">
+				<img class="homepage-1-image" src="img/homepage-20.png?72627b5dceb6e2b61025f63ced9ecdad" alt="">
+			</div>
+			<div class="homepage-21">
+				<img class="homepage-1-image" src="img/homepage-21.png?5518e6f1609a1baaa093be3d93415299" alt="">
+			</div>
+			<div class="homepage-22">
+				<img class="homepage-1-image" src="img/homepage-22.png?0deacb9e8f9ec8d48e13321d99dea43b" alt="">
+			</div>
+			<div class="homepage-23">
+				<img class="homepage-1-image" src="img/homepage-23.png?fc1cbea9bf3f28d43be3c52207e99779" alt="">
+			</div>
+			<div class="homepage-24">
+				<img class="homepage-1-image" src="img/homepage-24.png?65e1ca21fc98115d1608347c3ba82330" alt="">
+			</div>
+			<div class="homepage-25">
+				<img class="homepage-1-image" src="img/homepage-25.png?41c66d42c6e1388a64aa498250c7eb8c" alt="">
+			</div>
+		</div>
+		<div class="pages">
+			<div class="pages-1">
+				<img src="img/pages-1.png?1ab99ff1c77b4a4f33bf1d85c21c609b" alt="">
+			</div>
+			<div class="pages-2">
+				<img src="img/pages-2.png?6342dadcdb7cfaff78c79212a072f2d5" alt="">
+			</div>
+			<div class="pages-3">
+				<img src="img/pages-3.png?5189249ac0785135699efd8e74d81043" alt="">
+			</div>
+			<div class="pages-4">
+				<img src="img/pages-4.png?9244643d3f3f8cef848c04e08f030c13" alt="">
+			</div>
+			<div class="pages-5">
+				<img src="img/pages-5.png?ec96d91fcf9786fd237d5e8bebd18ee1" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="navigation">
+		<div class="uk-container">
+			<div class="navigation__section-heading section-heading section-heading_dark">
+				<div class="section-heading__title">
+					Навигация
+				</div>
+				<div class="section-heading__number">
+					<span class="section-heading__marker"></span>03
+				</div>
+			</div>
+			<div class="navigation__center-text center-text center-text_dark">
+				<p>
+					Первоочередная задача, которую должен решать сайт  - это информирование посетителей и легкая связь с администрацией через ресурс.
+				</p>
+				<p>
+					Для этого мы организовали верхний бар, сквозной через весь сайт, в котором располагаются кнопка перехода в интернет- приёмную и поиск. <br>
+					Этот бар при прокрутке фиксируется сверху экрана, обеспечивая пользователю быстрый доступ с любой просматриваемой страницы.
+				</p>
+				<p>
+					Для людей с ограниченными зрительными способностями тут же расположена  кнопка переключения на контрастную версию.
+				</p>
+			</div>
+			<div class="menu">
+				<div class="menu-bar">
+					<img src="img/menu.jpg?f77948d1b53454cc7c212401376071fa" alt="">
+				</div>
+				<div class="menu__content">
+					<img src="img/homepage.jpg?1f4bffa740281e0306f12b427581cb0b" alt="">
+				</div>
+				<svg class="menu__scroll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
+					<defs>
+					<path id="st66a" d="M1434.5 6866a51.5 51.5 0 1 1 0 103 51.5 51.5 0 0 1 0-103z"/>
+					<path id="st66b" d="M1435 6877a41 41 0 1 1 0 82 41 41 0 0 1 0-82z"/>
+					<path id="st66e" d="M1434.5 6889a28.5 28.5 0 1 1 0 57 28.5 28.5 0 0 1 0-57z"/>
+					<path id="st66f" d="M1434 6923h1v9h-1z"/>
+					<path id="st66g" d="M1427.65 6926.35l.7-.7 6 6-.7.7z"/>
+					<path id="st66h" d="M1440.35 6926.35l-.7-.7-6 6 .7.7z"/>
+					<path id="st66i" d="M1434 6908h1v9h-1z"/>
+					<path id="st66j" d="M1427.65 6911.64l.7.71 6-6-.7-.7z"/>
+					<path id="st66k" d="M1440.35 6911.64l-.7.71-6-6 .7-.7z"/>
+					<clipPath id="st66c"><use fill="transparent" xlink:href="#st66a"/></clipPath><clipPath id="st66d"><use fill="transparent" xlink:href="#st66b"/></clipPath></defs><g><g transform="translate(-1383 -6866)"><g><use fill="transparent" xlink:href="#st66a"/><use fill="transparent" fill-opacity="0" stroke="#ffe24e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-opacity=".9" stroke-width="4" clip-path="url(&quot;#st66c&quot;)" xlink:href="#st66a"/></g><g><use fill="transparent" xlink:href="#st66b"/><use fill="#fff" fill-opacity="0" stroke="#ffe24e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-opacity=".9" stroke-width="4" clip-path="url(&quot;#st66d&quot;)" xlink:href="#st66b"/></g><g><use fill="#ffe24e" xlink:href="#st66e"/></g><g><g><use xlink:href="#st66f"/></g><g><use xlink:href="#st66g"/></g><g><use xlink:href="#st66h"/></g></g><g><g><use xlink:href="#st66i"/></g><g><use xlink:href="#st66j"/></g><g><use xlink:href="#st66k"/></g></g></g></g>
+				</svg>
+			</div>
+			<div class="center-text">
+				Меню структурировано по наиболее запрашиваемым разделам, подкатегории “скрываются” в выпадающем списке.
 			</div>
 		</div>
 	</div>

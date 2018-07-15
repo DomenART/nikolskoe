@@ -1,0 +1,117 @@
+.visual-slider {
+	width: 72.5%;
+	box-sizing: border-box;
+	padding-top: 43.9%;
+	position: absolute;
+	top: 8%;
+	left: 14%;
+}
+
+.visual-slider__vector {
+	width: 21%;
+	height: 98%;
+	position: absolute;
+	right: -18.5%;
+	top: 2%;
+	z-index: 3;
+}
+
+.visual-slide__items {
+	width: 100%;
+	height: 0 !important;
+	padding-top: 61%;
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+}
+
+.visual-slider__control-bar {
+	display: flex;
+	position: absolute;
+	bottom: -150px;
+	left: 50%;
+	transform: translateX(-50%);
+	@media screen and (max-width: @breakpoint-small) {
+		bottom: -80px;
+	}
+}
+
+.visual-slider__control-btn {
+	display: block;
+	width: 63px;
+	height: 63px;
+	background-color: #686d72;
+	position: relative;
+	&:hover {
+		background-color: #4f595e;
+	}
+	&::before {
+		content: '';
+		width: 13px;
+		height: 13px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		border-top: 1px solid #eceded;
+		border-right: 1px solid #eceded;
+	}
+	@media screen and (max-width: @breakpoint-small) {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.visual-slider__prev {
+	margin-right: 30px;
+	&::before { 
+		transform: translate(-50%, -50%) rotate(-135deg);
+	}
+}
+
+.visual-slider__next {
+	&::before {
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+}
+
+.visual-slider__nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	right: -20.6%;
+	top: 20%;
+	z-index: 4;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		margin-bottom: 4vw;
+		transition: transform 0.25s; 
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&.uk-active {
+			transform: scale(1.3);
+			transition: transform 0.25s; 
+			a {
+				width: 4vw;
+				height: 4vw;
+				border-width: 2px;
+				box-shadow: 0 0 0 1px #909397;
+			}
+		}
+	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 2.8vw;
+		height: 2.8vw;
+		background-color: #4f595e;
+		border: 10px solid #62656b;
+		border-radius: 50%;
+		box-shadow: 0 0 0 1px #4f595e;
+		outline: 0;
+	}
+}

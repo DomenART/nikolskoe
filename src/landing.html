@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="main.css">
 	<title>Кейс</title>
 </head>
-<body>
+<body class="page">
 	<div class="intro">
 		<div class="uk-container">
 			<div class="section-heading section-heading_light">
@@ -37,7 +37,7 @@
 				От нового качества экономики – <br>
 				к новому качеству жизни
 			</div>
-			<div class="about__columns">
+			<div class="about__columns-text columns-text">
 				<div>
 					Особенности территориального расположения, хорошо развитая социальная, транспортная и инженерная инфраструктура образования дает все возможности поселению стать одной из точек роста на территории района.
 				</div>
@@ -46,20 +46,268 @@
 				</div> 
 			</div>
 			<div class="about__video-wrapper uk-cover-container">
-				<video data-uk-cover controls pause>
-					<source src="img/bigbuckbunny.mp4" autostart="false">
+				<video class="about__video" data-uk-cover="autoplay: false">
+					<source src="img/bigbuckbunny.mp4">
 				</video>
+				<button class="about__video-btn">
+					<svg class="about__video-btn-icon" viewBox="0 0 143 143">
+						<defs>
+							<path id="j9ava" d="M878 2395v-146h146v146zm139.99-72.5a66.5 66.5 0 1 0-133 0 66.5 66.5 0 0 0 133 0zm-32 1l-50.98 30.5V2293z"/>
+							<path id="j9avb" d="M951.49 2389a66.5 66.5 0 1 1 0-133 66.5 66.5 0 0 1 0 133zM935 2292.98V2354l50.98-30.5z"/>
+							<clipPath id="j9avc"><use fill="#fff" xlink:href="#j9ava"/></clipPath>
+						</defs>
+						<g>
+							<g opacity=".58" transform="translate(-880 -2251)">
+							<use fill="transparent" xlink:href="#j9avb"/>
+							<use fill="#fff" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="10" clip-path="url(&quot;#j9avc&quot;)" xlink:href="#j9avb"/>
+							</g>
+						</g>
+					</svg>
+				</button>
 			</div>
-			
-			<div class="about__text">
+			<div class="center-text">
 				В рамках действующей стратегии возникла необходимость в создании современного, удобного и информативного сайта.
 			</div>
 			<div class="about__goal">
 				<span>Задача</span>
 			</div>
-			<div class="about__text">
+			<div class="center-text">
 				Создать интернет-представительство администрации муниципального образования
 				с учетом всех требований, предъявляемых к сайтам государственных структур.
+			</div>
+		</div>
+	</div>
+	<div class="home">
+		<div class="uk-container">
+			<div class="about__section-heading section-heading section-heading_dark">
+				<div class="section-heading__title">
+					Главная
+				</div>
+				<div class="section-heading__number">
+					<span class="section-heading__marker"></span>02
+				</div>
+			</div>
+		</div>
+		<div class="home-devices">
+			<div class="home-devices__tablet">
+				<img src="img/home-tablet.png" alt="">
+			</div>
+			<div class="home-devices__smartphone">
+				<img src="img/home-smartphone.png" alt="">
+			</div>
+		</div>
+		<div class="visual">
+			<div class="uk-container uk-container-small">
+				<div class="visual-heading">
+					<div class="visual-heading__decor"></div>
+					<div class="visual-heading__title">Визуальная информация</div>
+				</div>
+				<div class="visual__columns-text columns-text">
+					<div>
+						Главная страница должна быть
+						и информативной, и интересной для посетителя, поэтому для первого экрана
+						мы предложили использовать полноэкранный слайдер с кадрами, отражающими ключевые сектора экономической деятельности поселения.	
+					</div>
+					<div>
+						Сельское хозяйство является основной отраслью экономики.
+
+						Включает в себя растениеводство, животноводство и птицеводство.
+					</div>
+				</div>
+			</div>
+			<div class="visual__homepage">
+				<div class="visual__content"></div>
+				<div class="visual-slider" uk-slideshow>
+					<ul class="visual-slide__items uk-slideshow-items">
+						<li class="uk-cover-container uk-position-absolute">
+							<img src="img/slider-cow.jpg" data-uk-cover alt="">
+						</li>
+						<li class="uk-cover-container uk-position-absolute">
+							<img src="img/slider-bird.jpg" data-uk-cover alt="">
+						</li>
+						<li class="uk-cover-container uk-position-absolute">
+							<img src="img/slider-plant.jpg" data-uk-cover alt="">
+						</li>
+					</ul>
+					<ul class="visual-slider__nav">
+						<li uk-slideshow-item="0">
+							<a href="#">
+								<img src="img/cow.png" alt="">
+							</a>
+						</li>
+						<li uk-slideshow-item="1">
+							<a href="#">
+								<img src="img/chicken.png" alt="">
+							</a>
+						</li>
+						<li uk-slideshow-item="2">
+							<a href="#">
+								<img src="img/plant.png" alt="">	
+							</a>
+						</li>
+					</ul>
+					<div class="visual-slider__control-bar">
+						<a class="visual-slider__control-btn visual-slider__prev" href="#" uk-slideshow-item="previous"></a>
+						<a class="visual-slider__control-btn visual-slider__next" href="#" uk-slideshow-item="next"></a>
+					</div>
+					<img class="visual-slider__vector" src="img/visual-slider-vector.svg" alt="">
+				</div>
+			</div>
+			<div class="visual__center-text center-text center-text_light">
+				Концепция со слайдером была принята, но кадры с животноводством и растениеводством в дальнейшем решили заменить на кадры с достопримечательностями поселения.
+			</div>
+		</div>
+	</div>
+	<div class="structure">
+		<div class="uk-container">
+			<div class="structure__title">
+				Структура
+			</div>
+			<div class="structure__text">
+				<p>Одним из удобных и легких для восприятия способов подачи информации является “карточный” дизайн.</p>
+				<p>Именно такой вариант мы и предложили использовать для ключевых страниц сайта.</p>
+			</div>
+		</div>
+		<div class="homepage">
+			<div class="homepage-1">
+				<img class="homepage-1-image" src="img/homepage-1.png" alt="">
+			</div>
+			<div class="homepage-2">
+				<img class="homepage-1-image" src="img/homepage-2.png" alt="">
+			</div>
+			<div class="homepage-3">
+				<img class="homepage-1-image" src="img/homepage-3.png" alt="">
+			</div>
+			<div class="homepage-4">
+				<img class="homepage-1-image" src="img/homepage-4.png" alt="">
+			</div>
+			<div class="homepage-5">
+				<img class="homepage-1-image" src="img/homepage-5.png" alt="">
+			</div>
+			<div class="homepage-6">
+				<img class="homepage-1-image" src="img/homepage-6.png" alt="">
+			</div>
+			<div class="homepage-7">
+				<img class="homepage-1-image" src="img/homepage-7.png" alt="">
+			</div>
+			<div class="homepage-8">
+				<img class="homepage-1-image" src="img/homepage-8.png" alt="">
+			</div>
+			<div class="homepage-9">
+				<img class="homepage-1-image" src="img/homepage-9.png" alt="">
+			</div>
+			<div class="homepage-10">
+				<img class="homepage-1-image" src="img/homepage-10.png" alt="">
+			</div>
+			<div class="homepage-11">
+				<img class="homepage-1-image" src="img/homepage-11.png" alt="">
+			</div>
+			<div class="homepage-12">
+				<img class="homepage-1-image" src="img/homepage-12.png" alt="">
+			</div>
+			<div class="homepage-13">
+				<img class="homepage-1-image" src="img/homepage-13.png" alt="">
+			</div>
+			<div class="homepage-14">
+				<img class="homepage-1-image" src="img/homepage-14.png" alt="">
+			</div>
+			<div class="homepage-15">
+				<img class="homepage-1-image" src="img/homepage-15.png" alt="">
+			</div>
+			<div class="homepage-16">
+				<img class="homepage-1-image" src="img/homepage-16.png" alt="">
+			</div>
+			<div class="homepage-17">
+				<img class="homepage-1-image" src="img/homepage-17.png" alt="">
+			</div>
+			<div class="homepage-18">
+				<img class="homepage-1-image" src="img/homepage-18.png" alt="">
+			</div>
+			<div class="homepage-19">
+				<img class="homepage-1-image" src="img/homepage-19.png" alt="">
+			</div>
+			<div class="homepage-20">
+				<img class="homepage-1-image" src="img/homepage-20.png" alt="">
+			</div>
+			<div class="homepage-21">
+				<img class="homepage-1-image" src="img/homepage-21.png" alt="">
+			</div>
+			<div class="homepage-22">
+				<img class="homepage-1-image" src="img/homepage-22.png" alt="">
+			</div>
+			<div class="homepage-23">
+				<img class="homepage-1-image" src="img/homepage-23.png" alt="">
+			</div>
+			<div class="homepage-24">
+				<img class="homepage-1-image" src="img/homepage-24.png" alt="">
+			</div>
+			<div class="homepage-25">
+				<img class="homepage-1-image" src="img/homepage-25.png" alt="">
+			</div>
+		</div>
+		<div class="pages">
+			<div class="pages-1">
+				<img src="img/pages-1.png" alt="">
+			</div>
+			<div class="pages-2">
+				<img src="img/pages-2.png" alt="">
+			</div>
+			<div class="pages-3">
+				<img src="img/pages-3.png" alt="">
+			</div>
+			<div class="pages-4">
+				<img src="img/pages-4.png" alt="">
+			</div>
+			<div class="pages-5">
+				<img src="img/pages-5.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="navigation">
+		<div class="uk-container">
+			<div class="navigation__section-heading section-heading section-heading_dark">
+				<div class="section-heading__title">
+					Навигация
+				</div>
+				<div class="section-heading__number">
+					<span class="section-heading__marker"></span>03
+				</div>
+			</div>
+			<div class="navigation__center-text center-text center-text_dark">
+				<p>
+					Первоочередная задача, которую должен решать сайт  - это информирование посетителей и легкая связь с администрацией через ресурс.
+				</p>
+				<p>
+					Для этого мы организовали верхний бар, сквозной через весь сайт, в котором располагаются кнопка перехода в интернет- приёмную и поиск. <br>
+					Этот бар при прокрутке фиксируется сверху экрана, обеспечивая пользователю быстрый доступ с любой просматриваемой страницы.
+				</p>
+				<p>
+					Для людей с ограниченными зрительными способностями тут же расположена  кнопка переключения на контрастную версию.
+				</p>
+			</div>
+			<div class="menu">
+				<div class="menu-bar">
+					<img src="img/menu.jpg" alt="">
+				</div>
+				<div class="menu__content">
+					<img src="img/homepage.jpg" alt="">
+				</div>
+				<svg class="menu__scroll" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 103 103">
+					<defs>
+					<path id="st66a" d="M1434.5 6866a51.5 51.5 0 1 1 0 103 51.5 51.5 0 0 1 0-103z"/>
+					<path id="st66b" d="M1435 6877a41 41 0 1 1 0 82 41 41 0 0 1 0-82z"/>
+					<path id="st66e" d="M1434.5 6889a28.5 28.5 0 1 1 0 57 28.5 28.5 0 0 1 0-57z"/>
+					<path id="st66f" d="M1434 6923h1v9h-1z"/>
+					<path id="st66g" d="M1427.65 6926.35l.7-.7 6 6-.7.7z"/>
+					<path id="st66h" d="M1440.35 6926.35l-.7-.7-6 6 .7.7z"/>
+					<path id="st66i" d="M1434 6908h1v9h-1z"/>
+					<path id="st66j" d="M1427.65 6911.64l.7.71 6-6-.7-.7z"/>
+					<path id="st66k" d="M1440.35 6911.64l-.7.71-6-6 .7-.7z"/>
+					<clipPath id="st66c"><use fill="transparent" xlink:href="#st66a"/></clipPath><clipPath id="st66d"><use fill="transparent" xlink:href="#st66b"/></clipPath></defs><g><g transform="translate(-1383 -6866)"><g><use fill="transparent" xlink:href="#st66a"/><use fill="transparent" fill-opacity="0" stroke="#ffe24e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-opacity=".9" stroke-width="4" clip-path="url(&quot;#st66c&quot;)" xlink:href="#st66a"/></g><g><use fill="transparent" xlink:href="#st66b"/><use fill="#fff" fill-opacity="0" stroke="#ffe24e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-opacity=".9" stroke-width="4" clip-path="url(&quot;#st66d&quot;)" xlink:href="#st66b"/></g><g><use fill="#ffe24e" xlink:href="#st66e"/></g><g><g><use xlink:href="#st66f"/></g><g><use xlink:href="#st66g"/></g><g><use xlink:href="#st66h"/></g></g><g><g><use xlink:href="#st66i"/></g><g><use xlink:href="#st66j"/></g><g><use xlink:href="#st66k"/></g></g></g></g>
+				</svg>
+			</div>
+			<div class="center-text">
+				Меню структурировано по наиболее запрашиваемым разделам, подкатегории “скрываются” в выпадающем списке.
 			</div>
 		</div>
 	</div>

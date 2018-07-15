@@ -1,0 +1,28 @@
+.visual__columns-text {
+	color: #b1b7bf;
+}
+
+.visual__homepage {
+	max-width: 76%;
+	box-sizing: border-box;
+	margin: 160px auto 170px;
+	padding-top: 42%;
+	background: url(../img/visual-slider.png) 50% 50% no-repeat;
+	background-size: cover;
+	position: relative;
+	@media screen and (max-width: @breakpoint-small) {
+		max-width: 100%;
+		padding-top: 54%;
+	}
+}
+
+.visual__content {
+	width: 62%;
+	padding-top: 29%;
+	background: url(../img/visual-slider-content.png) 50% 50% no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 35.5%;
+	left: 19%;
+	z-index: 3;
+}
